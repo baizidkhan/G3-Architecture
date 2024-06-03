@@ -1,0 +1,588 @@
+/* Font Style Import  */
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Ojuju:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Utility Class / Common Class */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Work Sans", sans-serif;
+}
+.btn{
+    padding: 16px 22px;
+    border: none;
+    color: #ffffff;
+    background-color: #FF900E;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    transition: background-color .3s ease-in-out, border .3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #ffffff;
+    color: #FF900E;
+    border: 1px solid #FF900E;
+    z-index: 2;
+}
+
+/*################ Upper Body & Upper Content Style  ###################*/
+
+.upper-body, .footer-body{
+    background: rgba(255, 144, 14, 0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upper-content{
+    width: 1440px;
+    /* border: 1px solid salmon; */
+}
+/*################ Navbar Style  ###################*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+.navbar .logo-text{
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+    transition: color .3s ease-in-out;
+}
+.navbar .logo-text:hover{
+    color: #FF900E;
+    cursor: pointer;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 3px;
+    transition: background-color .3s ease-in-out;
+}
+
+.navbar ul li:hover a{
+    color: #ffffff;
+    background-color: #FF900E;
+}
+
+/*################ Banner Style  ###################*/
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.banner-content{
+    width: 862px;
+    margin: 50px 0;
+    /* border: 1px solid salmon; */
+}
+.banner-title{
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    color: #131313;
+}
+.banner-desc{
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    line-height: 26px;
+    margin: 30px 0 50px;
+    text-align: center;
+}
+
+.btn-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+.banner-img{
+    margin-bottom: 45px;
+}
+.banner-img img{
+    width: 100%;
+}
+
+
+
+/*################ Lower Body & Lower Content Style  ###################*/
+
+.lower-body{
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lower-content{
+    width: 1440px;
+    /* border: 1px solid salmon; */
+}
+
+
+/* Feature-01 Style  */
+.feature-01{
+    margin: 90px;
+    /* border: 1px solid salmon; */
+}
+.feature{
+    display: flex;
+    gap: 76px;
+    align-items: center;
+}
+.image-part{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 24px;
+    border-radius: 8px;
+}
+.image-part .img-box{
+    transition: transform .3s ease-in-out;
+}
+.image-part .img-box:hover{
+    transform: scale(1.1);
+}
+.f_content_title{
+    margin-bottom: 24px;
+    font-size: 45px;
+}
+.cl_01{
+    color: var(--Dark-03, #727272);
+    font-weight: 500;
+}
+.cl_02{
+    color: var(--Dark-01, #131313);
+    font-weight: 700;
+}
+.cl_03{
+    color: #FF900E;
+    font-weight: 700;
+}
+.f_content_decs{
+    color: var(--Dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
+    margin-bottom: 24px;
+}
+
+
+/* #################### Experiences Style ############################ */
+
+.experience{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid salmon; */
+    /* height: 982px; */
+    align-items: center;
+    gap: 146px;
+    margin-bottom: 90px;
+}
+.exp-content{
+    /* border: 1px solid salmon; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+}
+.exp-content > div{
+    flex: 1;
+    /* height: 171px; */
+}
+.exp-head{
+    color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0px 30px;
+    border-left: 5px solid #FF900E;
+}
+.exp-title{
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+.decs-box{
+    padding: 33px 30px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    transition: transform .3s ease-in, border .3s ease-in-out;
+    /* border: 1px solid salmon; */
+}
+.decs-box:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+    transform-origin: center;
+    /* border: 1px solid #FF900E; */
+
+}
+.decs-box .desc-head{
+    color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+.decs-box .desc-title{
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+.bottom-btn{
+    position: relative;
+    top: -70px;
+    right: 80px;
+}
+.exp-btn{
+    font-size: 65px;
+    line-height: 40px;
+    padding: 46px 42px;
+}
+.exp-btn span{
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Fect Section Style  */
+
+.fact-title{
+    color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.fact-desc{
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    width: 542px;
+    margin-top: 24px;
+}
+
+.facts{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin: 100px 0 180px;
+}
+.fact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    width: 241.831px;
+    height: 241.831px;
+    /* transform: rotate(90deg); */
+    transition: background-color .3s ease-in-out;
+    flex-shrink: 0;
+}
+.fact:hover{
+    background-color: #FF900E;
+    cursor: pointer;
+}
+.fact-img img{
+    width: 45.221px;
+    height: 45.221px;
+    flex-shrink: 0;
+}
+.fact_num{
+    color: var(--Dark-02, #424242);
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: color .3s ease-in-out;
+}
+.award_name{
+    color: var(--Dark-03, #727272);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: color .3s ease-in-out;
+}
+.fact:hover .award_name, .fact:hover .fact_num{
+    color: #ffffff;
+}
+
+/* Sponsor Section Style  */
+.text-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.spon-title{
+    color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.spon-desc{
+    color: var(--Dark-03, #727272);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    width: 542px;
+    margin: 20px 0 50px;
+}
+.spons-images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 130px;
+}
+.spon_img{
+    transition: transform .3s ease-in-out;
+}
+.spon_img:hover{
+    transform: scale(1.2);
+}
+
+/* Footer Style  */
+.foot-content{
+    color: var(--Dark-02, #424242);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 38px 0;
+    transition: font-weight .2s ease-in-out;
+    cursor: pointer;
+}
+
+.footer-body:hover .foot-content{
+    font-weight: 700;
+}
+
+
+
+/* Responsive Layout  */
+/* Layout for small Screen  */
+@media only screen and (max-width : 576px) {
+    .upper-content, .lower-content, .banner-content, .fact-desc, .spon-desc{
+        width: 100%;
+    }
+    .navbar , .experience, .facts{
+        flex-direction: column;
+    }
+    .navbar{
+        margin-bottom: 0px;
+    }
+    .navbar .links{
+        margin-top: 30px;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar ul li{
+        list-style: none;
+        margin-left: 0px;
+        background-color: #FF900E;
+        width: 100%;
+        margin: 12px;
+        padding: 12px;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        text-align: center;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 3px;
+    }
+    .banner-title{
+        font-size: 52px;
+        padding: 0 20px;
+    }
+    .banner-desc{
+        font-size: 16px;
+        font-weight: 400;
+        color: #727272;
+        line-height: 26px;
+        margin: 30px 0 50px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .facts{
+        gap: 30px;
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+    .feature{
+        flex-direction: column-reverse;
+    }
+    .feature .image-part{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .spons-images{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .top-img img{
+        width: 100%;
+    }
+    .bottom-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 70px;
+        right: 0;
+    }
+    .exp-btn{
+        font-size: 32px;
+        line-height: 32px;
+        padding: 26px 22px;
+    }
+    .exp-btn span{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .fact-sec{
+        margin-top: 150px;
+    }
+    .fact-title{
+        text-align: center;
+    }
+    .fact-desc{
+        text-align: center;
+    }
+    .foot-content{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 38px 30px;
+    line-height: 24px;
+}
+    
+}
+
+
+
+
+
+
+
+/* Layout for Tab Screen  */
+@media only screen and (min-width : 577px) and (max-width : 992px) {
+    .upper-content, .lower-content, .banner-content, .fact-desc, .spon-desc{
+        width: 100%;
+    }
+    .navbar , .experience, .facts{
+        flex-direction: column;
+    }
+    .navbar{
+        margin-bottom: 0px;
+    }
+    .navbar .links{
+        margin-top: 30px;
+    }
+    .navbar ul li{
+        list-style: none;
+        margin-left: 0px;
+        padding: 12px;
+    }
+    .facts{
+        gap: 30px;
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+    .feature{
+        flex-direction: column-reverse;
+    }
+    .feature .image-part{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .spons-images{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .top-img img{
+        width: 100%;
+    }
+    .bottom-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 70px;
+        right: 0;
+    }
+    .exp-btn{
+        font-size: 32px;
+        line-height: 32px;
+        padding: 26px 22px;
+    }
+    .exp-btn span{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .fact-sec{
+        margin-top: 150px;
+    }
+    .fact-title{
+        text-align: center;
+    }
+    .fact-desc{
+        text-align: center;
+    }
+    .foot-content{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 38px 30px;
+    line-height: 24px;
+}
+    
+}
